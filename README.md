@@ -12,4 +12,4 @@ className = "PHYS371";
   - **className** is a string that describes the context of the groups you're forming.
   
   That's it. The output should be a TreePlot diagram, like this:
-  ![alt text](https://github.com/hojasonn/RandomGroupGenerator/blob/master/sample.pdf "Sample TreePlot")
+  ![alt text](https://github.com/hojasonn/RandomGroupGenerator/blob/master/sample-1.png "Sample TreePlot")
