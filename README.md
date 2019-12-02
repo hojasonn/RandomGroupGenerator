@@ -2,7 +2,8 @@
 
 I developed this in Mathematica because I wanted a transparent way to form random groups in a classroom setting; this way, students can be sure that groups are completely (pseudo)random. Mathematica is an easy choice because I know the students have previous experience using the program, and it allows visualization of the random groups for quickly facilitating collaborative work.
 The few variables that need to be changed for any specific scenario are at the top of RandomGroupGenerator.nb:
-```students = Get[ToString[NotebookDirectory[]] <> "studentList.m"];
+```
+students = Get[ToString[NotebookDirectory[]] <> "studentList.m"];
 groupSize = 6;
 className = "PHYS371";
 ```
