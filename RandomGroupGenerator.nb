@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[     21121,        493]
-NotebookOptionsPosition[     19882,        465]
-NotebookOutlinePosition[     20219,        480]
-CellTagsIndexPosition[     20176,        477]
+NotebookDataLength[     21183,        501]
+NotebookOptionsPosition[     20126,        475]
+NotebookOutlinePosition[     20463,        490]
+CellTagsIndexPosition[     20420,        487]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -36,6 +36,9 @@ Cell[BoxData[
        RowBox[{"{", 
         RowBox[{"i", ",", "1", ",", "30"}], "}"}]}], "]"}]}], "]"}], "*)"}], 
   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+  RowBox[{"(*", 
+   RowBox[{"variables", " ", "to", " ", "change"}], "*)"}], 
+  "\[IndentingNewLine]", 
   RowBox[{
    RowBox[{
     RowBox[{"students", "=", 
@@ -44,17 +47,26 @@ Cell[BoxData[
        RowBox[{"ToString", "[", 
         RowBox[{"NotebookDirectory", "[", "]"}], "]"}], "<>", 
        "\"\<studentList.m\>\""}], "]"}]}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"numberofStudents", "=", 
-    RowBox[{"Length", "[", "students", "]"}]}], "\[IndentingNewLine]", 
    RowBox[{
     RowBox[{"groupSize", "=", "6"}], ";"}], "\[IndentingNewLine]", 
-   RowBox[{"numberofGroups", "=", 
-    RowBox[{"Floor", "[", 
-     RowBox[{"numberofStudents", "/", "groupSize"}], "]"}]}], 
+   RowBox[{
+    RowBox[{"className", "=", "\"\<PHYS371\>\""}], ";"}], 
+   "\[IndentingNewLine]", "\[IndentingNewLine]", 
+   RowBox[{"(*", 
+    RowBox[{"variables", " ", "calculated", " ", "from", " ", "inputs"}], 
+    "*)"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"numberofStudents", "=", 
+     RowBox[{"Length", "[", "students", "]"}]}], ";"}], "\[IndentingNewLine]", 
+   RowBox[{
+    RowBox[{"numberofGroups", "=", 
+     RowBox[{"Floor", "[", 
+      RowBox[{"numberofStudents", "/", "groupSize"}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", 
-   RowBox[{"leftover", "=", 
-    RowBox[{"Mod", "[", 
-     RowBox[{"numberofStudents", ",", "groupSize"}], "]"}]}], 
+   RowBox[{
+    RowBox[{"leftover", "=", 
+     RowBox[{"Mod", "[", 
+      RowBox[{"numberofStudents", ",", "groupSize"}], "]"}]}], ";"}], 
    "\[IndentingNewLine]", "\[IndentingNewLine]", 
    RowBox[{"(*", 
     RowBox[{
@@ -73,49 +85,31 @@ Cell[BoxData[
        RowBox[{"\"\<Group \>\"", "<>", 
         RowBox[{"ToString", "[", "i", "]"}]}], ",", 
        RowBox[{"{", 
-        RowBox[{"i", ",", "1", ",", "numberofGroups"}], "}"}]}], "]"}]}], ";"}
-    ]}]}]], "Input",
+        RowBox[{"i", ",", "1", ",", "numberofGroups"}], "}"}]}], "]"}]}], 
+    ";"}]}]}]], "Input",
  CellChangeTimes->{{3.783336776511812*^9, 3.78333683350307*^9}, {
   3.783336888540925*^9, 3.783337146625947*^9}, {3.7833372108572893`*^9, 
   3.7833372249760017`*^9}, {3.783337279957878*^9, 3.783337283758601*^9}, {
   3.7833373258348103`*^9, 3.783337325934181*^9}, {3.78333735879493*^9, 
   3.783337607550705*^9}, {3.7833402608113956`*^9, 3.783340289812337*^9}, {
   3.783340331107439*^9, 3.783340331216942*^9}, {3.783340419759348*^9, 
-  3.78334052112138*^9}, {3.784283744234373*^9, 3.784283750854205*^9}},
- CellLabel->"In[25]:=",ExpressionUUID->"0879919f-6dfd-4ea0-baa5-0a9ee7677d48"],
-
-Cell[BoxData["27"], "Output",
- CellChangeTimes->{
-  3.783340261287903*^9, 3.783340292644812*^9, 3.783340331963791*^9, 
-   3.7833404206343203`*^9, {3.78428385859569*^9, 3.7842838623258123`*^9}, 
-   3.784285143199003*^9},
- CellLabel->"Out[26]=",ExpressionUUID->"477ca4ad-d8e3-47e4-8457-cb89961037fa"],
-
-Cell[BoxData["4"], "Output",
- CellChangeTimes->{
-  3.783340261287903*^9, 3.783340292644812*^9, 3.783340331963791*^9, 
-   3.7833404206343203`*^9, {3.78428385859569*^9, 3.7842838623258123`*^9}, 
-   3.784285143201886*^9},
- CellLabel->"Out[28]=",ExpressionUUID->"785d7351-c6ee-41d2-9511-f89858158d7d"],
-
-Cell[BoxData["3"], "Output",
- CellChangeTimes->{
-  3.783340261287903*^9, 3.783340292644812*^9, 3.783340331963791*^9, 
-   3.7833404206343203`*^9, {3.78428385859569*^9, 3.7842838623258123`*^9}, 
-   3.784285143204116*^9},
- CellLabel->"Out[29]=",ExpressionUUID->"ba3f0b19-8f89-4954-9cc4-6a5d11dd970d"],
+  3.78334052112138*^9}, {3.784283744234373*^9, 3.784283750854205*^9}, {
+  3.784285822786544*^9, 3.784285824199586*^9}, {3.7842859195312223`*^9, 
+  3.7842859660540133`*^9}, {3.7842860253227863`*^9, 
+  3.784286034958541*^9}},ExpressionUUID->"0879919f-6dfd-4ea0-baa5-\
+0a9ee7677d48"],
 
 Cell[BoxData["\<\"Are groups equally split? --> False\"\>"], "Echo",
  CellChangeTimes->{
-  3.7842851432074738`*^9},ExpressionUUID->"2d859e6c-f70c-45bd-88f8-\
-d9221368f885"]
+  3.784285970417611*^9},ExpressionUUID->"b8eed48c-9245-4774-b27b-\
+960720c2597a"]
 }, Open  ]],
 
 Cell[BoxData[
  RowBox[{"(*", 
   RowBox[{"randomly", " ", "assign", " ", "groups"}], "*)"}]], "Input",
  CellChangeTimes->{{3.7833379051723003`*^9, 3.783337910345111*^9}},
- CellLabel->"In[32]:=",ExpressionUUID->"ee5a20f1-f735-4ecb-a05b-866fcb1206f2"],
+ CellLabel->"In[8]:=",ExpressionUUID->"ee5a20f1-f735-4ecb-a05b-866fcb1206f2"],
 
 Cell[CellGroupData[{
 
@@ -264,14 +258,25 @@ Cell[BoxData[{
    3.78428463424609*^9}, 3.784284839935832*^9, {3.7842849874912233`*^9, 
    3.784285053727407*^9}, {3.784285090619557*^9, 3.784285136462846*^9}, {
    3.784285179385868*^9, 3.784285196847516*^9}, {3.7842852404805183`*^9, 
-   3.7842852414022408`*^9}, {3.7842853030273848`*^9, 
-   3.784285321045288*^9}},ExpressionUUID->"00b80f5e-93bc-433d-8b4b-\
-3c06c9f9012a"],
+   3.7842852414022408`*^9}, {3.7842853030273848`*^9, 3.784285321045288*^9}},
+ CellLabel->"In[9]:=",ExpressionUUID->"00b80f5e-93bc-433d-8b4b-3c06c9f9012a"],
+
+Cell[BoxData[
+ TemplateBox[{
+  "Part","partw",
+   "\"Part \\!\\(\\*RowBox[{\\\"3\\\"}]\\) of \\!\\(\\*RowBox[{\\\"{\\\", \
+\\\"\\\\\\\"Student 3\\\\\\\"\\\", \\\"}\\\"}]\\) does not exist.\"",2,9,1,
+   26354844962121703374,"Local"},
+  "MessageTemplate"]], "Message", "MSG",
+ CellChangeTimes->{3.784285970815401*^9},
+ CellLabel->
+  "During evaluation of \
+In[9]:=",ExpressionUUID->"3fdbeff5-6577-4180-97fe-189858b355ac"],
 
 Cell[BoxData["\<\"Is everyone accounted for? --> True\"\>"], "Echo",
  CellChangeTimes->{
-  3.784285242338698*^9},ExpressionUUID->"a57ad925-1749-4354-8d9b-\
-feea927ab1b1"]
+  3.784285970818355*^9},ExpressionUUID->"f7e8de0f-6b17-410e-b46e-\
+53817c85fe46"]
 }, Open  ]],
 
 Cell[CellGroupData[{
@@ -286,7 +291,7 @@ Cell[BoxData[
      RowBox[{
       RowBox[{"Table", "[", 
        RowBox[{
-        RowBox[{"\"\<PHYS371\>\"", "\[Rule]", 
+        RowBox[{"className", "\[Rule]", 
          RowBox[{"groups", "[", 
           RowBox[{"[", "i", "]"}], "]"}]}], ",", 
         RowBox[{"{", 
@@ -296,8 +301,10 @@ Cell[BoxData[
     RowBox[{"VertexLabeling", "\[Rule]", "True"}]}], "]"}]}]], "Input",
  CellChangeTimes->{{3.7833367112496157`*^9, 3.783336771130831*^9}, {
   3.783337158723791*^9, 3.783337261618496*^9}, {3.783337742992948*^9, 
-  3.783337782612426*^9}, {3.783337817801955*^9, 3.7833379038684387`*^9}},
- CellLabel->"In[44]:=",ExpressionUUID->"16670846-d989-4d81-aa75-2b749806da43"],
+  3.783337782612426*^9}, {3.783337817801955*^9, 3.7833379038684387`*^9}, {
+  3.784286018443256*^9, 
+  3.784286019789701*^9}},ExpressionUUID->"16670846-d989-4d81-aa75-\
+2b749806da43"],
 
 Cell[BoxData[
  GraphicsBox[
@@ -335,11 +342,11 @@ uYjP
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 5], InsetBox[
-       FrameBox["\<\"Student 11\"\>",
+       FrameBox["\<\"Student 14\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 6], InsetBox[
-       FrameBox["\<\"Student 26\"\>",
+       FrameBox["\<\"Student 25\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 7], InsetBox[
@@ -347,67 +354,67 @@ uYjP
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 8], InsetBox[
-       FrameBox["\<\"Student 22\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 9], InsetBox[
-       FrameBox["\<\"Student 4\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 10], InsetBox[
-       FrameBox["\<\"Student 23\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 11], InsetBox[
-       FrameBox["\<\"Student 17\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 12], InsetBox[
-       FrameBox["\<\"Student 9\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 13], InsetBox[
-       FrameBox["\<\"Student 10\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 14], InsetBox[
-       FrameBox["\<\"Student 24\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 15], InsetBox[
-       FrameBox["\<\"Student 5\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 16], InsetBox[
-       FrameBox["\<\"Student 7\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 17], InsetBox[
-       FrameBox["\<\"Student 8\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 18], InsetBox[
        FrameBox["\<\"Student 15\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 19], InsetBox[
-       FrameBox["\<\"Student 6\"\>",
-        Background->RGBColor[1, 1, 0.8],
-        FrameStyle->RGBColor[0.94, 0.85, 0.36],
-        StripOnInput->False], 20], InsetBox[
+        StripOnInput->False], 9], InsetBox[
        FrameBox["\<\"Student 20\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 10], InsetBox[
+       FrameBox["\<\"Student 18\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 11], InsetBox[
+       FrameBox["\<\"Student 10\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 12], InsetBox[
+       FrameBox["\<\"Student 27\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 13], InsetBox[
+       FrameBox["\<\"Student 6\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 14], InsetBox[
+       FrameBox["\<\"Student 5\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 15], InsetBox[
+       FrameBox["\<\"Student 12\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 16], InsetBox[
+       FrameBox["\<\"Student 26\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 17], InsetBox[
+       FrameBox["\<\"Student 16\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 18], InsetBox[
+       FrameBox["\<\"Student 22\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 19], InsetBox[
+       FrameBox["\<\"Student 8\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
+        StripOnInput->False], 20], InsetBox[
+       FrameBox["\<\"Student 17\"\>",
+        Background->RGBColor[1, 1, 0.8],
+        FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 21], InsetBox[
-       FrameBox["\<\"Student 19\"\>",
+       FrameBox["\<\"Student 23\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 22], InsetBox[
-       FrameBox["\<\"Student 13\"\>",
+       FrameBox["\<\"Student 11\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 23], InsetBox[
-       FrameBox["\<\"Student 16\"\>",
+       FrameBox["\<\"Student 2\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 24], InsetBox[
@@ -415,31 +422,34 @@ uYjP
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 25], InsetBox[
-       FrameBox["\<\"Student 18\"\>",
+       FrameBox["\<\"Student 13\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 26], InsetBox[
-       FrameBox["\<\"Student 25\"\>",
+       FrameBox["\<\"Student 7\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 27], InsetBox[
-       FrameBox["\<\"Student 3\"\>",
+       FrameBox["\<\"Student 9\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 28], InsetBox[
-       FrameBox["\<\"Student 2\"\>",
+       FrameBox["\<\"Student 24\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 29], InsetBox[
-       FrameBox["\<\"Student 27\"\>",
+       FrameBox["\<\"Student 19\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 30], InsetBox[
-       FrameBox["\<\"Student 12\"\>",
+       FrameBox["\<\"Student 4\"\>",
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 31], InsetBox[
-       FrameBox["\<\"Student 14\"\>",
+       FrameBox[
+        RowBox[{
+         RowBox[{"{", "\<\"Student 3\"\>", "}"}], "\[LeftDoubleBracket]", "3",
+          "\[RightDoubleBracket]"}],
         Background->RGBColor[1, 1, 0.8],
         FrameStyle->RGBColor[0.94, 0.85, 0.36],
         StripOnInput->False], 32]}}],
@@ -459,8 +469,8 @@ uYjP
  CellChangeTimes->{{3.783336732354368*^9, 3.783336757998108*^9}, {
    3.783337234009756*^9, 3.783337261993884*^9}, 3.783340109078866*^9, 
    3.783340309488765*^9, {3.7842838589746933`*^9, 3.784283862564834*^9}, 
-   3.784285143384851*^9, 3.7842852483877487`*^9},
- CellLabel->"Out[44]=",ExpressionUUID->"0363ce13-01a5-46e1-811e-8df5d34a26d5"]
+   3.784285143384851*^9, 3.7842852483877487`*^9, 3.784285970905602*^9},
+ CellLabel->"Out[11]=",ExpressionUUID->"4024d2da-ab8f-443b-a518-88817e5c48f0"]
 }, Open  ]]
 },
 WindowSize->{1920, 1052},
@@ -480,20 +490,18 @@ CellTagsIndex->{}
 (*NotebookFileOutline
 Notebook[{
 Cell[CellGroupData[{
-Cell[580, 22, 2572, 62, 285, "Input",ExpressionUUID->"0879919f-6dfd-4ea0-baa5-0a9ee7677d48"],
-Cell[3155, 86, 298, 5, 35, "Output",ExpressionUUID->"477ca4ad-d8e3-47e4-8457-cb89961037fa"],
-Cell[3456, 93, 297, 5, 35, "Output",ExpressionUUID->"785d7351-c6ee-41d2-9511-f89858158d7d"],
-Cell[3756, 100, 297, 5, 35, "Output",ExpressionUUID->"ba3f0b19-8f89-4954-9cc4-6a5d11dd970d"],
-Cell[4056, 107, 172, 3, 27, "Echo",ExpressionUUID->"2d859e6c-f70c-45bd-88f8-d9221368f885"]
+Cell[580, 22, 3122, 77, 377, "Input",ExpressionUUID->"0879919f-6dfd-4ea0-baa5-0a9ee7677d48"],
+Cell[3705, 101, 170, 3, 27, "Echo",ExpressionUUID->"b8eed48c-9245-4774-b27b-960720c2597a"]
 }, Open  ]],
-Cell[4243, 113, 248, 4, 31, "Input",ExpressionUUID->"ee5a20f1-f735-4ecb-a05b-866fcb1206f2"],
+Cell[3890, 107, 247, 4, 31, "Input",ExpressionUUID->"ee5a20f1-f735-4ecb-a05b-866fcb1206f2"],
 Cell[CellGroupData[{
-Cell[4516, 121, 7050, 147, 630, "Input",ExpressionUUID->"00b80f5e-93bc-433d-8b4b-3c06c9f9012a"],
-Cell[11569, 270, 170, 3, 27, "Echo",ExpressionUUID->"a57ad925-1749-4354-8d9b-feea927ab1b1"]
+Cell[4162, 115, 7067, 146, 630, "Input",ExpressionUUID->"00b80f5e-93bc-433d-8b4b-3c06c9f9012a"],
+Cell[11232, 263, 419, 10, 22, "Message",ExpressionUUID->"3fdbeff5-6577-4180-97fe-189858b355ac"],
+Cell[11654, 275, 170, 3, 27, "Echo",ExpressionUUID->"f7e8de0f-6b17-410e-b46e-53817c85fe46"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[11776, 278, 991, 21, 170, "Input",ExpressionUUID->"16670846-d989-4d81-aa75-2b749806da43"],
-Cell[12770, 301, 7096, 161, 533, "Output",ExpressionUUID->"0363ce13-01a5-46e1-811e-8df5d34a26d5"]
+Cell[11861, 283, 1015, 23, 170, "Input",ExpressionUUID->"16670846-d989-4d81-aa75-2b749806da43"],
+Cell[12879, 308, 7231, 164, 533, "Output",ExpressionUUID->"4024d2da-ab8f-443b-a518-88817e5c48f0"]
 }, Open  ]]
 }
 ]
