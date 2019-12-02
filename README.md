@@ -7,7 +7,7 @@ students = Get[ToString[NotebookDirectory[]] <> "studentList.m"];
 groupSize = 6;
 className = "PHYS371";
 ```
-  - Change "studentList.m" to whatever file contains a classlist of names. A sample file is provided.
+  - Change "studentList.m" to whatever file contains a classlist of names. By default, the program looks in the same directory at the notebook file is stored. A sample file is provided.
   - **groupSize** will change depending on how big you want your groups.
   - **className** is a string that describes the context of the groups you're forming.
   
